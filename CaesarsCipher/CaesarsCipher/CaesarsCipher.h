@@ -9,8 +9,9 @@ public:
   ArgumentHandler* handler;
   FileOperator* manager;
   Decrypter* coder;
+  bool succes;
 public:
-  CaesarsCipher();
+  CaesarsCipher(int argc, char* argv[]);
   ~CaesarsCipher();
 };
 

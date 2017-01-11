@@ -1,17 +1,13 @@
-#//define RELEASE
-
-#ifdef RELEASE
-
 #include <iostream>
+#include <string>
 #include "CaesarsCipher.h"
 
-
 int main(int argc, char* argv[]) {
-
-  CaesarsCipher cipher;
-  
-  system("pause");
+  try {
+    CaesarsCipher cipher(argc, argv);
+  }
+  catch (const char* error) {
+    std::cout << error << std::endl;
+  }
   return 0;
 }
-
-#endif
