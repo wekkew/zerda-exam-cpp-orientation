@@ -7,7 +7,8 @@ FileOperator::FileOperator(string inputPath, string outputPath) {
   readfromfile();
 }
 
-void FileOperator::readfromfile() {
+string FileOperator::readfromfile() {
+  string inText;
   ifstream inputText;
   inputText.open(inPath.c_str());
   string currentLine;
@@ -15,6 +16,7 @@ void FileOperator::readfromfile() {
     inText += currentLine + "\n";
   }
   inputText.close();
+  return inText;
 }
 
 void FileOperator::writetoFile() {
@@ -25,5 +27,5 @@ void FileOperator::writetoFile() {
 }
 
 FileOperator::~FileOperator() {
-  writetoFile();
+  //writetoFile();
 }

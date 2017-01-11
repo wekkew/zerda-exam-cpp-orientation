@@ -10,15 +10,13 @@ using std::getline;
 
 class FileOperator {
 public:
-  string inText;
   string outText;
   string inPath;
   string outPath;
 public:
   FileOperator(string, string);
   ~FileOperator();
-private:
-  void readfromfile();
-  void writetoFile();
+  string readfromfile();
+  void writetoFile();  
 };
 

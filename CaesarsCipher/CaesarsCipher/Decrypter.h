@@ -1,8 +1,16 @@
 #pragma once
-class Decrypter
-{
+
+#include <string>
+
+using std::string;
+
+class Decrypter {
 public:
-  Decrypter();
+  string text;
+  int shift;
+public:
+  Decrypter(int);
+  string justDoIt();
   ~Decrypter();
 };
 
