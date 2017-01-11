@@ -5,7 +5,7 @@
 #include "Decrypter.h"
 
 class CaesarsCipher {
-private:
+public:
   ArgumentHandler* handler;
   FileOperator* manager;
   Decrypter* coder;
